@@ -6,7 +6,6 @@ const bodyParser = require('body-parser');
 const compression = require('compression');
 const cors = require('cors');
 
-
 const app = express();
 
 app.use(cors());

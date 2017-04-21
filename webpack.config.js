@@ -15,7 +15,7 @@ const config = {
     module: {
         loaders: [{
             test: /\.jsx?$/,
-            exclude: /(node_modules | bower_components)/,
+            exclude: /node_modules/,
             loader: 'babel-loader',
             query: {
                 presets: ['react', 'es2015', 'stage-1']
@@ -23,7 +23,7 @@ const config = {
         }, {
             test: /\.s?css/,
             loaders: ['style-loader', 'css-loader', 'sass-loader'],
-            exclude: /(node_modules | bower_components)/,
+            exclude: /node_modules/,
         }]
     },
     resolve: {
