@@ -10,4 +10,4 @@ Landing Page for Hili and Nadav
 	> npm start
 ```
 
-![](/demo.png)
+![](/dist/demo.png)
