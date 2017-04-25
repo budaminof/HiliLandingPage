@@ -4,8 +4,7 @@ import { Field, reduxForm } from 'redux-form';
 const validate = values => {
   const errors = {}
   if (!values.name) errors.name = 'Please enter a name';
-  if (!values.email) errors.email = 'Please enter a valid Email';
-  // if (/^$/.test(values.term)) errors.term = 'Search can\'t be empty';
+  if (!/\S+@\S+\.\S+/.test(values.email)) errors.email = 'Please enter a valid Email';
   return errors
 }
 
