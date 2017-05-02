@@ -5,9 +5,11 @@ Landing Page for Hili and Nadav
 - mobile first
 - scrollable divs
 
+For development run two tabs(express and webpack):
+
 ```
-	> npm install
 	> npm start
+	> npm run dev
 ```
 
-![](/dist/demo.png)
+![](/dist/images/demo.png)

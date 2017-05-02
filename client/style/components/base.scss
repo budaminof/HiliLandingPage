@@ -1,7 +1,18 @@
+@import './components/variables';
+
 body {
- text-align: center;
+  font-family: $font-stack;
+  height: 100%;
 }
 
-.danger {
-  color: red;
+.container {
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+@mixin coverImage {
+  // background: no-repeat center center fixed;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
 }
