@@ -6,13 +6,6 @@ body {
 }
 
 .container {
-  margin: 0px 0px;
+  margin: 0px 0px !important;
   padding: 0px 0px;
-}
-
-@mixin coverImage {
-  // background: no-repeat center center fixed;
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // -o-background-size: cover;
 }

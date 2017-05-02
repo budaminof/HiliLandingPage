@@ -24,7 +24,11 @@ const config = {
             test: /\.s?css/,
             loaders: ['style-loader', 'css-loader', 'sass-loader'],
             exclude: /node_modules/,
-        }]
+        }, {
+          test: /\.(png|jpg)$/,
+          include: `${__dirname}/dist/images`,
+          loader: 'url-loader'
+       }]
     },
     resolve: {
         extensions: ['.js', '.jsx']

@@ -1,9 +1,7 @@
 @import './components/variables';
 
 .middle {
-  .cover {
-    @include coverImage;
-    background: no-repeat center center;
-    background-size: cover;
-  }
+  @include coverImage;
+  background: url('/images/glove.png') no-repeat center center;
+  margin-top: 5px;
 }
