@@ -4,4 +4,23 @@
   @include coverImage;
   background: url('/images/glove.png') no-repeat center center;
   margin-top: 3px;
+
+  aside {
+    color: $white;
+    position: relative;
+    top: 35vh;
+    left: 10vw;
+
+    .page-header {
+      margin-top: 0px;
+    }
+    p {
+      font-size: $p-font-size;
+    }
+
+    p:nth-of-type(2n) {
+      padding-bottom: 30px;
+    }
+  }
+  
 }
