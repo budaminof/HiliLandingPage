@@ -12,4 +12,4 @@ For development run two tabs(express and webpack):
 	> npm run dev
 ```
 
-![](/dist/images/demo.png)
+![](/dist/images/demo.jpg)
