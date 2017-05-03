@@ -52,13 +52,8 @@
   }
 
   button {
-   background-color: Transparent;
-   background-repeat:no-repeat;
-   border: none;
-   cursor:pointer;
-   overflow: hidden;
-   outline:none;
-
+    @include button;
+    
     img {
       height: 7vh;
       position: absolute;

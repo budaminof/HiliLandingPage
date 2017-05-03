@@ -3,8 +3,8 @@ import { Field, reduxForm } from 'redux-form';
 
 const validate = values => {
   const errors = {}
-  if (!values.name) errors.name = 'Please enter a name';
-  if (!/\S+@\S+\.\S+/.test(values.email)) errors.email = 'Please enter a valid Email';
+  if (!values.name) errors.name = 'בבקשה הקלד שם';
+  if (!/\S+@\S+\.\S+/.test(values.email)) errors.email = 'בבקשה הקלד כתובת אימייל';
   return errors
 }
 
@@ -18,12 +18,14 @@ const warn = values => {
 // rerender, it loses focus.
 const renderField = ({ input, label, type,
     meta: { touched, error, warning } }) => (
-      <div>
-        <input {...input} type={type} />
+      <div className="from-field">
         {touched && ((error && <p className="danger">{error}</p>) ||
         (warning && <p>{warning}</p>))}
+        <label>{label}</label>
+        <input {...input} type={type} />
       </div>
   );
+
 
 class ContactForm extends Component {
 
@@ -31,19 +33,22 @@ class ContactForm extends Component {
     const { handleSubmit } = this.props;
 
     return (
-      <div className="contact">
+      <div className="contact-form">
         <form onSubmit={ handleSubmit } >
 
-          <Field name="name" component={ renderField } type="text" label="name"
+          <Field name="name" component={ renderField } type="text" label="שם."
             required/>
 
-          <Field name="company" component={ renderField } type="text" label="company"
+          <Field name="phone" component={ renderField } type="tel" label="טלפון."
             required/>
 
-          <Field name="email" component={ renderField } type="email" label="email"
+          <Field name="email" component={ renderField } type="email" label="EMAIL."
             required/>
 
-          <button type="submit">send</button>
+          <button type="submit">
+            <span>שלח</span>
+            <img src="/images/arrow.png"></img>
+          </button>
         </form>
       </div>
     )

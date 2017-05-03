@@ -1,3 +1,77 @@
-.danger {
-  color: red;
+@import './components/variables';
+
+.contact {
+  text-align: center;
+  height: 95vh;
+  padding-top: 10vh;
+  color: $black;
+  background-color: $white-background;
+
+  .contact-form {
+    width: 40vw;
+    margin: 0 auto;
+
+    .from-field {
+      text-align: right;
+      margin-top: 40px;
+      border-bottom: 1px solid $form-border;
+      label {
+        margin-left: 10px;
+      }
+      input {
+        width: 90%;
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        border: none;
+        overflow: hidden;
+        outline: none;
+      }
+    }
+
+    .danger {
+      color: $danger;
+    }
+
+    button[type="submit"] {
+      @include button;
+      margin-top: 40px;
+      float: left;
+
+      img {
+        height: 40px;
+        filter: invert(1);
+        color: $black;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
+      span {
+        font-size: 20px;
+        margin-left: 10px;
+      }
+    }
+
+  }
+
+  .icon {
+    display: block;
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+    img {
+      height: 10vh;
+    }
+
+  }
+
+  .details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    img {
+      height: 6vh;
+    }
+  }
 }
