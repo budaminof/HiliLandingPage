@@ -4,16 +4,68 @@
   @include coverImage;
   background: url('/images/brash.jpg') no-repeat center center;
 
-
   .social {
-    text-align: right;
+    float: right;
     display: flex;
-    border: 1px solid green;
+    margin-right: 6vw;
+    margin-top: 4vw;
     justify-content: space-around;
-    width: 30vw;
-    margin-right: 0px;
+    width: 150px;
     img {
-      height: 20px;
+      height: 25px;
+      filter: brightness(0) invert(1);
+    }
+  }
+
+  .logo-top {
+    height: 25vh;
+    position: absolute;
+    top: 12vh;
+    left: 0;
+    right:0;
+    margin: auto;
+  }
+
+  .stamp {
+    height: 20vh;
+    position: fixed;
+    right: 7vw;
+    bottom: 40vh;
+  }
+
+  aside {
+    color: $white;
+    text-align: right;
+    position: absolute;
+    bottom: 10vh;
+    right: 8vw;
+    h1 {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-top: 1px solid $white;
+      border-bottom: 1px solid $white;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+
+  button {
+   background-color: Transparent;
+   background-repeat:no-repeat;
+   border: none;
+   cursor:pointer;
+   overflow: hidden;
+   outline:none;
+
+    img {
+      height: 7vh;
+      position: absolute;
+      bottom: 4vh;
+      left: 0;
+      right:0;
+      margin: auto;
     }
   }
 }

@@ -7,11 +7,11 @@ import Middle from './middle';
 export default class App extends Component {
   render() {
     return (
-      <main>
+      <div>
         <Head />
         <Middle />
         <Contact />
-      </main>
+      </div>
     );
   }
 }
