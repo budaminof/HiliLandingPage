@@ -30,7 +30,7 @@
     height: 20vh;
     position: fixed;
     right: 7vw;
-    bottom: 40vh;
+    bottom: 41vh;
   }
 
   aside {
@@ -53,7 +53,7 @@
 
   button {
     @include button;
-    
+
     img {
       height: 7vh;
       position: absolute;

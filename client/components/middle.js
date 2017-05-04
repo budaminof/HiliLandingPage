@@ -5,7 +5,7 @@ class Middle extends Component {
   render() {
     return (
       <article className="middle">
-        <aside className="col-md-5">
+        <aside className="col-md-4">
           <h1 className="page-header">מה אנו עושים</h1>
           <p>
             רצפת דק היא ללא ספק תוספת מרשימה ומזמינה מאד לגינות ושטחים פתוחים, פיתרון מרהיב ביופיו המספק אוירה חמימה ונעימה. הדק כולל לוחות עץ המורכבים על גבי קורות עץ או מתכת, כך שבדיוק בגלל המאפיינים שהופכים הדק למרשים ודקורטיבי כל כך הוא גם דורש תחזוקה.

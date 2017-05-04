@@ -8,19 +8,23 @@
   aside {
     color: $white;
     position: relative;
-    top: 35vh;
+    top: 25vh;
+    // only for full page
     left: 10vw;
 
     .page-header {
       margin-top: 0px;
+      padding-bottom: 25px;
     }
+
     p {
       font-size: $p-font-size;
     }
 
     p:nth-of-type(2n) {
       padding-bottom: 30px;
+      padding-top: 10px;
     }
   }
-  
+
 }
