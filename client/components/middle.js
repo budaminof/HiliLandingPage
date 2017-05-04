@@ -4,7 +4,7 @@ class Middle extends Component {
 
   render() {
     return (
-      <article className="middle">
+      <article className="middle" id="dentro">
         <aside className="col-md-4">
           <h1 className="page-header">מה אנו עושים</h1>
           <p>

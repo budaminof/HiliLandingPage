@@ -1,6 +1,17 @@
 import React, { Component } from 'react';
+import scrollToComponent from 'react-scroll-to-component';
+
 
 class Head extends Component {
+
+  handleScroll(event) {
+    let anchor = document.getElementById('dentro');
+    scrollToComponent(anchor, {
+      offset: 10,
+      align: 'top',
+      duration: 1200
+    });
+  }
 
   render() {
     return (
@@ -22,7 +33,7 @@ class Head extends Component {
             </p>
         </aside>
         <button>
-          <a>
+          <a className="page-scroll" onClick={event => this.handleScroll(event) }>
             <img src="/images/arrow.png" className="arrow"/>
           </a>
         </button>
