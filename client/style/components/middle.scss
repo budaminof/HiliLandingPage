@@ -9,7 +9,6 @@
     color: $white;
     position: relative;
     top: 25vh;
-    // only for full page
     left: 10vw;
 
     .page-header {
@@ -26,5 +25,13 @@
       padding-top: 10px;
     }
   }
-
 }
+
+@media (max-width: 600px){
+    .middle {
+      aside {
+        top: 20vh;
+        text-align: right;
+      }
+    }
+  }

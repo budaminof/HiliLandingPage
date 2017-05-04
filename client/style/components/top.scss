@@ -67,3 +67,20 @@
     }
   }
 }
+
+
+@media (max-width: 600px) {
+    .top {
+      aside {
+        bottom: 12vh;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .top {
+      .stamp {
+        position: absolute;
+      }
+    }
+  }
