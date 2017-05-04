@@ -6,21 +6,17 @@ class Head extends Component {
 
   handleScroll(event) {
     let anchor = document.getElementById('dentro');
-    scrollToComponent(anchor, {
-      offset: 10,
-      align: 'top',
-      duration: 1200
-    });
+    scrollToComponent(anchor);
   }
 
   render() {
     return (
-      <article className="top">
+      <article className="top" id="top">
 
         <div className="social">
-          <img src="/images/twitter.png"/>
-          <img src="/images/instagram.png"/>
-          <img src="/images/facebook.png"/>
+          <a><img src="/images/twitter.png"/></a>
+          <a><img src="/images/instagram.png"/></a>
+          <a><img src="/images/facebook.png"/></a>
         </div>
 
         <img src="/images/logo.png" className="logo-top"/>

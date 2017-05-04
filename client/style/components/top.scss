@@ -11,6 +11,9 @@
     margin-top: 4vw;
     justify-content: space-around;
     width: 150px;
+    a {
+      cursor: pointer;
+    }
     img {
       height: 25px;
       filter: brightness(0) invert(1);
