@@ -22,7 +22,7 @@ class Contact extends Component {
         <div className="details col-md-8 col-md-offset-2">
           <div>
             <p>נדב ברק &middot; טל. <a href="tel:+972528768856">052.8768856</a></p>
-            <p><a href="mailto:nadav@denrto.co.il ">Nadav@dentro.co.il</a></p>
+            <p><a href="mailto:nadav@denrto.co.il">Nadav@dentro.co.il</a></p>
           </div>
 
           <div>

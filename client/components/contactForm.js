@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+// import { connect } from 'react-redux';
 import { Field, reduxForm, handleSubmit, reset } from 'redux-form';
+// import * as actions from '../actions';
+/// import isEmail from 'sane-email-validator';
 
 const validate = values => {
   const errors = {}
@@ -17,18 +20,16 @@ const renderField = ({ input, label, type,
       </div>
   );
 
+const afterSubmit = (result, dispatch) => {
+  dispatch(reset('contactForm'));
+}
 
-class ContactForm extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    const { handleSubmit, pristine, reset, submitting } = this.props;
+const ContactForm = (props) => {
+  const { handleSubmit, pristine, reset, submitting } = props;
 
     return (
       <div className="contact-form">
-        <form onSubmit={handleSubmit} >
+        <form onSubmit={ handleSubmit } >
 
           <Field name="name" component={ renderField } type="text" label="שם."
             required/>
@@ -39,19 +40,18 @@ class ContactForm extends Component {
           <Field name="email" component={ renderField } type="email" label="EMAIL."
             required/>
 
-          <button type="submit">
+          <button type="submit"
+            disabled={ props.pristine || props.submitting} >
             <span>שלח</span>
             <img src="/images/arrow.png"></img>
           </button>
         </form>
       </div>
-    )
-  }
+    );
 }
 
-ContactForm = reduxForm({
+export default reduxForm({
   form: 'contactForm',
-  validate 
+  validate,
+  onSubmitSuccess: afterSubmit,
 })(ContactForm);
-
-export default ContactForm;
