@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import SearchForm from './contactForm';
 import scrollToComponent from 'react-scroll-to-component';
-
+import * as actions from '../actions';
 
 class Contact extends Component {
-
-  handleSubmit = (values) => {
-    console.log('handle submit',values);
-    // this.props.dispatch(newSearch());
-  }
 
   handleScroll(event) {
     let anchor = document.getElementById('top');
@@ -19,7 +15,7 @@ class Contact extends Component {
     return (
       <div className="contact">
         <h1>נשמח לענות לכל שאלה ועניין</h1>
-        <SearchForm onSubmit={this.handleSubmit} />
+        <SearchForm onSubmit={ actions.submitForm }/>
         <div className="icon">
           <a onClick={event => this.handleScroll(event) }><img src="/images/icon.png" /></a>
         </div>
@@ -49,4 +45,4 @@ class Contact extends Component {
   }
 }
 
-export default Contact;
+export default connect(null, actions)(Contact);

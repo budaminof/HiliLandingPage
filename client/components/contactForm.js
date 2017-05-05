@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Field, reduxForm } from 'redux-form';
+import { Field, reduxForm, handleSubmit, reset } from 'redux-form';
 
 const validate = values => {
   const errors = {}
@@ -8,19 +8,10 @@ const validate = values => {
   return errors
 }
 
-const warn = values => {
-  const warnings = {}
-  // add warning if needed.
-  // if (values.age < 19)  warnings.age = 'Hmm, you seem a bit young...' ;
-  return warnings
-}
-// this function can't be in the render function because when the component
-// rerender, it loses focus.
 const renderField = ({ input, label, type,
-    meta: { touched, error, warning } }) => (
+    meta: { touched, error } }) => (
       <div className="from-field">
-        {touched && ((error && <p className="danger">{error}</p>) ||
-        (warning && <p>{warning}</p>))}
+        {touched && ((error && <p className="danger">{error}</p>))}
         <label>{label}</label>
         <input {...input} type={type} />
       </div>
@@ -28,13 +19,16 @@ const renderField = ({ input, label, type,
 
 
 class ContactForm extends Component {
+  constructor(props) {
+    super(props);
+  }
 
   render() {
-    const { handleSubmit } = this.props;
+    const { handleSubmit, pristine, reset, submitting } = this.props;
 
     return (
       <div className="contact-form">
-        <form onSubmit={ handleSubmit } >
+        <form onSubmit={handleSubmit} >
 
           <Field name="name" component={ renderField } type="text" label="שם."
             required/>
@@ -56,9 +50,8 @@ class ContactForm extends Component {
 }
 
 ContactForm = reduxForm({
-  form: 'contactForm', // a unique name for this form
-  validate,  // <--- validation function given to redux-form
-  warn
+  form: 'contactForm',
+  validate 
 })(ContactForm);
 
 export default ContactForm;
