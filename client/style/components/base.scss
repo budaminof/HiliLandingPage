@@ -2,4 +2,18 @@
 
 body {
   font-family: $font-stack;
+  h1 {
+    letter-spacing: 2pt;
+  }
+  p {
+    letter-spacing: 2pt;
+  }
 }
+
+@media (max-width: 600px) {
+    body {
+      h1 {
+        letter-spacing: 0pt;
+      }
+    }
+  }
