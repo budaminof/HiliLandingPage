@@ -19,7 +19,7 @@ class Head extends Component {
           <a><img src="/images/facebook.png"/></a>
         </div>
 
-        <img src="/images/logo.png" className="logo-top"/>
+        <img src="/images/logo-top.png" className="logo-top"/>
         <img src="/images/stamp.png" className="stamp"/>
 
         <aside className="col-md-4 col-sm-6 col-xs-10">
