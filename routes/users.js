@@ -11,7 +11,7 @@ router.post('/', function(req, res, next) {
   });
 
   let data = {
-    from: `Excited User <${req.body.email}>`,
+    from: `${req.body.name} <${req.body.email}>`,
     to: process.env.EMAIL,
     subject: 'דנטרו',
     text: `
