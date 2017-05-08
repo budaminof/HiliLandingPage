@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-// import { connect } from 'react-redux';
 import { Field, reduxForm, handleSubmit, reset } from 'redux-form';
-// import * as actions from '../actions';
+// look into =>
 /// import isEmail from 'sane-email-validator';
 
 const validate = values => {

@@ -16,10 +16,6 @@
       padding-bottom: 25px;
     }
 
-    p {
-      font-size: $p-font-size;
-    }
-
     p:nth-of-type(2n) {
       padding-bottom: 30px;
       padding-top: 10px;
@@ -27,7 +23,7 @@
   }
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
     .middle {
       aside {
         top: 20vh;
@@ -35,3 +31,32 @@
       }
     }
   }
+
+@media screen and (max-device-width: 640px) {
+  .middle {
+    height: 100vh;
+    aside {
+      top: 10vh;
+    }
+  }
+}
+
+// iphone 6
+@media (min-width: 375px) and (max-width: 667px) and (orientation: portrait) {
+  .middle {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 667px) and (orientation: landscape) {
+  .middle {
+    height: 145vh;
+  }
+}
+
+// iphone 5
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  .middle {
+    height: 130vh;
+  }
+}
