@@ -2,7 +2,7 @@
 
 .contact {
   text-align: center;
-  height: 95vh;
+  height: 100vh;
   padding-top: 10vh;
   color: $black;
   background-color: $white-background;
@@ -77,6 +77,11 @@
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 2vh;
+    text-align: left;
+    p {
+      font-size: 14px;
+      letter-spacing: 0pt;
+    }
 
     a {
       text-decoration: none;
@@ -98,23 +103,24 @@
         width: 70% !important;
       }
     }
-  }
     .details {
       display: flex;
-      flex-direction: column !important;
+      flex-direction: column;
       justify-content: space-around;
+      text-align: center;
       div {
         margin-bottom: 3vh;
       }
     }
   }
+}
 
 @media (max-width: 720px) {
   .contact {
     height: 110vh;
     .contact-form {
       width: 80vw !important;
-    }
+      }
     }
   }
 
