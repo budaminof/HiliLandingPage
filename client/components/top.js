@@ -6,7 +6,9 @@ class Head extends Component {
 
   handleScroll(event) {
     let anchor = document.getElementById('dentro');
-    scrollToComponent(anchor);
+    scrollToComponent(anchor, {
+      align: 'top',
+    });
   }
 
   render() {
