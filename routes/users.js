@@ -11,11 +11,22 @@ router.post('/', function(req, res, next) {
   });
 
   let data = {
-    from: `Excited User <${process.env.EXCITED_CLIENT}>`,
+    from: `Excited User <${req.body.email}>`,
     to: process.env.EMAIL,
-    subject: 'Testing',
-    text: `${req.body.name} ${req.body.phone} ${req.body.email}`
+    subject: 'דנטרו',
+    text: `
+      היי הילי ונדבר,
+
+      נשמח אם תצרו איתנו קשר
+
+      ${req.body.name}
+      ${req.body.phone}
+      ${req.body.email}
+      
+      תודה רבה.
+    `
   };
+  console.log('DATA',data);
 
   mailgun.messages().send(data, function (error, body) {
     console.log('BODY',body);
