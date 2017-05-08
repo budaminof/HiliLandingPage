@@ -15,18 +15,17 @@ router.post('/', function(req, res, next) {
     to: process.env.EMAIL,
     subject: 'דנטרו',
     text: `
-      היי הילי ונדבר,
+      היי הילי ונדב,
 
       נשמח אם תצרו איתנו קשר
 
       ${req.body.name}
       ${req.body.phone}
       ${req.body.email}
-      
+
       תודה רבה.
     `
   };
-  console.log('DATA',data);
 
   mailgun.messages().send(data, function (error, body) {
     console.log('BODY',body);
