@@ -20,7 +20,7 @@ router.post('/', function(req, res, next) {
       נשמח אם תצרו איתנו קשר
 
       ${req.body.name}
-      ${req.body.phone}
+      ${req.body.phone || ''}
       ${req.body.email}
 
       תודה רבה.
