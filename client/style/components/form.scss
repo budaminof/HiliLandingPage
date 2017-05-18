@@ -78,9 +78,12 @@
     justify-content: space-around;
     margin-bottom: 2vh;
     text-align: left;
+    
     p {
       font-size: 14px;
       letter-spacing: 0pt;
+      padding: 0px 0px;
+      margin: 0px 0px;
     }
 
     a {
@@ -90,7 +93,7 @@
     }
 
     img {
-      height: 6vh;
+      height: 5vh;
     }
   }
 }

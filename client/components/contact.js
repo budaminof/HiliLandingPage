@@ -19,7 +19,7 @@ class Contact extends Component {
         <div className="icon">
           <a onClick={event => this.handleScroll(event) }><img src="/images/icon.png" /></a>
         </div>
-        <div className="details col-md-8 col-md-offset-2">
+        <div className="details col-md-6 col-md-offset-3">
           <div>
             <p>נדב ברק &middot; טל. <a href="tel:+972528768856">052.8768856</a></p>
             <p><a href="mailto:nadav@denrto.co.il">Nadav@dentro.co.il</a></p>
