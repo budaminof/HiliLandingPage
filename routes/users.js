@@ -12,7 +12,7 @@ router.post('/', function(req, res, next) {
 
   let data = {
     from: `${req.body.name} <${req.body.email}>`,
-    to: `<hili@dentro.co.il>, <budaminof@gmail.com>`,
+    to: `<hili@dentro.co.il>, <nadav@dentro.co.il>`,
     subject: 'דנטרו',
     text: `
       היי הילי ונדב,
