@@ -82,9 +82,11 @@
       }
     }
   }
+  
 // mobile
   @media screen and (max-device-width: 640px) {
     .top {
+      background: url('/images/brash2mobile.jpg') no-repeat center left;
       .stamp {
         display: none;
       }
