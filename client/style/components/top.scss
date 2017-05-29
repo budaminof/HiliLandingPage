@@ -2,11 +2,12 @@
 
 .top {
   @include coverImage;
-  background: url('/images/brash.jpg') no-repeat center center;
+  background: url('/images/brash2resize.jpg') no-repeat center center;
 
   .social {
     float: right;
-    display: flex;
+    // display: flex;
+    display: none;
     margin-right: 6vw;
     margin-top: 4vw;
     justify-content: space-around;
