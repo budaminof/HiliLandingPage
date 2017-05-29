@@ -2,7 +2,7 @@
 
 .top {
   @include coverImage;
-  background: url('/images/brash2resize.jpg') no-repeat center left;
+  background: url('/images/brash2.jpg') no-repeat center bottom;
 
   .social {
     float: right;
@@ -82,7 +82,7 @@
       }
     }
   }
-  
+
 // mobile
   @media screen and (max-device-width: 640px) {
     .top {
