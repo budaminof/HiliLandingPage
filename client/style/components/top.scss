@@ -2,7 +2,7 @@
 
 .top {
   @include coverImage;
-  background: url('/images/brash2resize.jpg') no-repeat center center;
+  background: url('/images/brash2resize.jpg') no-repeat center left;
 
   .social {
     float: right;
