@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 const Middle = (props) => {
   return (
-    <article className="middle" id="dentro">
+    <article className="middle">
 
-      <aside className="col-md-4 col-sm-6 col-xs-10">
+      <aside className="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
         <h1 className="page-header">מה אנו עושים</h1>
         <p>
           רצפת דק היא ללא ספק תוספת מרשימה ומזמינה מאד לגינות ושטחים פתוחים, פיתרון מרהיב ביופיו המספק אוירה חמימה ונעימה. הדק כולל לוחות עץ המורכבים על גבי קורות עץ או מתכת, כך שבדיוק בגלל המאפיינים שהופכים הדק למרשים ודקורטיבי כל כך הוא גם דורש תחזוקה.

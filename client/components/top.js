@@ -5,7 +5,7 @@ import scrollToComponent from 'react-scroll-to-component';
 class Head extends Component {
 
   handleScroll(event) {
-    let anchor = document.getElementById('dentro');
+    let anchor = document.getElementById('carousel');
     scrollToComponent(anchor, {
       align: 'top',
     });
@@ -24,7 +24,7 @@ class Head extends Component {
         <img src="/images/logo-top.png" className="logo-top"/>
         <img src="/images/stamp.png" className="stamp"/>
 
-        <aside className="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+        <aside className="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
             <h1>אומנות החידוש והשימור</h1>
             <p>
               דנטרו היא חברה ייעודית המתמחה בחידוש דקים ורסטורציה ברף האיכות הגבוה ביותר בתחום מבחינת ידע, מקצועיות, חדשנות, טכנולוגיה וחומרים באיכות הגבוהה ביותר.
