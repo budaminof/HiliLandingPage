@@ -1,12 +1,10 @@
 @import './components/variables';
 
 .top {
-  @include coverImage;
-  background: url('/images/brash2.jpg') no-repeat center bottom;
+  height: 100vh;
 
   .social {
     float: right;
-    // display: flex;
     display: none;
     margin-right: 6vw;
     margin-top: 4vw;
@@ -17,7 +15,7 @@
     }
     img {
       height: 25px;
-      filter: brightness(0) invert(1);
+      filter: brightness(1) invert(0.1);
     }
   }
 
@@ -28,27 +26,28 @@
     left: 0;
     right:0;
     margin: auto;
+    filter: brightness(1) invert(0.1);
   }
 
   .stamp {
+    z-index: 1000;
     height: 20vh;
     position: fixed;
     right: 7vw;
     bottom: 41vh;
+    filter: brightness(1) invert(0.9);
   }
 
   aside {
-    color: $white;
-    text-align: right;
-    position: absolute;
-    bottom: 10vh;
-    right: 8vw;
+    color: $black;
+    top: 45vh;
+    text-align: center;
     h1 {
       padding-top: 20px;
       padding-bottom: 20px;
       margin-bottom: 20px;
-      border-top: 1px solid $white;
-      border-bottom: 1px solid $white;
+      border-top: 1px solid $black;
+      border-bottom: 1px solid $black;
     }
   }
 
@@ -62,6 +61,7 @@
       left: 0;
       right:0;
       margin: auto;
+      filter: brightness(1) invert(1);
     }
   }
 }
@@ -86,8 +86,6 @@
 // mobile
   @media screen and (max-device-width: 640px) {
     .top {
-      // background: url('/images/brash2mobile.jpg') no-repeat center left;
-      background: url('/images/brash2mobile.jpg') no-repeat center bottom;
       .stamp {
         display: none;
       }
