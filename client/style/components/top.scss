@@ -58,7 +58,7 @@
       transition: all ease 0.5s;
       height: 7vh;
       position: absolute;
-      bottom: 4vh;
+      bottom: 2vh;
       left: 0;
       right:0;
       margin: auto;
@@ -92,8 +92,17 @@
 // mobile
   @media screen and (max-device-width: 640px) {
     .top {
+      h1 {
+        font-size: 8vw;
+      }
+      .logo-top {
+        top: 4vh;
+      }
       .stamp {
         display: none;
+      }
+      aside {
+        top: 35vh;
       }
     }
   }
@@ -101,9 +110,6 @@
 // iPhone 5
 @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
   .top {
-    h1 {
-      font-size: 22px;
-    }
     .logo-top {
       height: 22vh;
     }

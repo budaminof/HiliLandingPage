@@ -1,5 +1,10 @@
 Landing Page for Hili and Nadav
 
+To push test branch to heroku -
+
+```
+	git push production newDesign:master
+```
 - Multi text (En HE)
 - send email via https://www.npmjs.com/package/node-mandrill
 - mobile first
