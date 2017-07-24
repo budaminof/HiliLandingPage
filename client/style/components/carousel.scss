@@ -13,6 +13,11 @@
     z-index: 100;
   }
 
+  .carousel-indicators {
+    margin-bottom: 0px;
+    bottom: 5px;
+  }
+
   .carousel-indicators li, .carousel-indicators li.active {
       margin: 0px 7px !important;
     }
@@ -49,5 +54,12 @@
       z-index:1;
     }
   }
+
+  }
+
+  @media screen and (max-device-width: 640px) {
+    .carousel-indicators {
+      margin-left: -25%;
+    }
 
   }
