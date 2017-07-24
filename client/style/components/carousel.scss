@@ -13,15 +13,11 @@
     z-index: 100;
   }
 
-  ol {
-    li {
-      margin-left: 10px;
-      margin-right: 10px;
+  .carousel-indicators li, .carousel-indicators li.active {
+      margin: 0px 7px !important;
     }
-  }
-
-    .carousel-inner {
-     > .item {
+  .carousel-inner {
+    .item {
       opacity: 0;
       top: 0;
       left: 0;
@@ -34,23 +30,23 @@
       &:first-of-type {
         position:relative;
       }
-      }
-     > .active {
+    }
+    .active {
       opacity: 1;
       z-index:3;
     }
 
-     > .next.left,
-     > .prev.right {
+    .next.left,
+    .prev.right {
       transition: opacity 0.6s ease-in-out;
       opacity: 1;
       left: 0;
       z-index:2;
-      }
-     > .active.left,
-     > .active.right {
+    }
+    .active.left,
+    .active.right {
       z-index:1;
-      }
+    }
   }
 
-}
+  }

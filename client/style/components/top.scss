@@ -58,7 +58,7 @@
       transition: all ease 0.5s;
       height: 7vh;
       position: absolute;
-      bottom: 2vh;
+      bottom: 4vh;
       left: 0;
       right:0;
       margin: auto;
@@ -72,6 +72,13 @@
 
 }
 
+@media (max-width: 800px) {
+  .top {
+    .stamp {
+      bottom: 47vh;
+    }
+  }
+}
 
 @media (max-width: 600px) {
     .top {

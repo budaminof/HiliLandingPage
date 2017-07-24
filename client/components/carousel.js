@@ -9,14 +9,22 @@ const Carousel = (props) => {
         <ol className="carousel-indicators">
           <li data-target="#carousel" data-slide-to="0" className="active"></li>
           <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+          <li data-target="#carousel" data-slide-to="3"></li>
         </ol>
 
         <div className="carousel-inner" role="listbox">
           <div className="item active">
-            <img src="/images/brash2.jpg" alt=""></img>
+            <img src="/images/deck1.jpg" alt=""></img>
           </div>
           <div className="item">
-            <img src="/images/glove.png" alt=""></img>
+            <img src="/images/deck2.jpg" alt=""></img>
+          </div>
+          <div className="item">
+            <img src="/images/deck3.jpg" alt=""></img>
+          </div>
+          <div className="item">
+            <img src="/images/deck4.jpg" alt=""></img>
           </div>
         </div>
 

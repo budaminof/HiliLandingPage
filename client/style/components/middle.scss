@@ -1,12 +1,11 @@
 @import './components/variables';
 
 .middle {
-  margin-top: 3px;
-  height: 100vh;
+  height: 80vh;
 
   aside {
     color: $black;
-    top: 20vh;
+    top: 10vh;
 
     .page-header {
       padding-bottom: 25px;
@@ -29,7 +28,7 @@
 
 @media screen and (max-device-width: 640px) {
   .middle {
-    // height: 100vh;
+    height: 100vh;
     aside {
       top: 10vh;
     }
@@ -37,11 +36,11 @@
 }
 
 // iphone 6
-@media (min-width: 375px) and (max-width: 667px) and (orientation: portrait) {
-  .middle {
-    // height: 100vh;
-  }
-}
+// @media (min-width: 375px) and (max-width: 667px) and (orientation: portrait) {
+//   .middle {
+//     height: 100vh;
+//   }
+// }
 
 @media (min-width: 375px) and (max-width: 667px) and (orientation: landscape) {
   .middle {
