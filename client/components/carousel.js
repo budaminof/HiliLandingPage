@@ -11,6 +11,8 @@ const Carousel = (props) => {
           <li data-target="#carousel" data-slide-to="1"></li>
           <li data-target="#carousel" data-slide-to="2"></li>
           <li data-target="#carousel" data-slide-to="3"></li>
+          <li data-target="#carousel" data-slide-to="4"></li>
+          <li data-target="#carousel" data-slide-to="5"></li>
         </ol>
 
         <div className="carousel-inner" role="listbox">
@@ -21,10 +23,16 @@ const Carousel = (props) => {
             <img src="/images/deck2.jpg" alt=""></img>
           </div>
           <div className="item">
-            <img src="/images/deck3.jpg" alt=""></img>
+            <img src="/images/deck4.jpg" alt=""></img>
           </div>
           <div className="item">
-            <img src="/images/deck4.jpg" alt=""></img>
+            <img src="/images/deck5.jpg" alt=""></img>
+          </div>
+          <div className="item">
+            <img src="/images/deck6.jpg" alt=""></img>
+          </div>
+          <div className="item">
+            <img src="/images/deck7.jpg" alt=""></img>
           </div>
         </div>
 
