@@ -4,7 +4,10 @@ const Carousel = (props) => {
   return (
     <div className="carousel">
 
-      <div id="carousel" className="carousel slide" data-ride="carousel">
+      <div id="carousel" className="carousel slide"
+        data-ride="carousel"
+        data-interval="3000"
+        data-pause="null">
 
         <ol className="carousel-indicators">
           <li data-target="#carousel" data-slide-to="0" className="active"></li>
