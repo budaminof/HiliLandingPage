@@ -25,7 +25,7 @@
 }
 
 .top {
-  height: 90vh;
+  height: 85vh;
 
   .social {
     float: right;
@@ -110,20 +110,24 @@
         bottom: 12vh;
       }
     }
+    .stamp {
+      display: none;
+    }
   }
 
-  @media (max-width: 720px) {
-    .top {
-      height: 80vh;
-      button {
-        img {
-          bottom: 23vh; 
-        }
-      }
-      .stamp {
-        position: absolute;
+@media (max-width: 720px) {
+  .top {
+    // height: 80vh;
+    
+    button {
+      img {
+        bottom: 17vh;
       }
     }
+    .stamp {
+      position: absolute;
+    }
+  }
   }
 
 // mobile
@@ -139,10 +143,29 @@
         display: none;
       }
       aside {
-        top: 35vh;
+        top: 30vh;
       }
     }
   }
+
+// landscape
+@media screen and (max-device-width: 680px) and (orientation: landscape) {
+  .top {
+    height: 95vh;
+
+    aside {
+      top: 30vh;
+      h1 {
+        font-size: 7vh;
+      }
+    }
+    button {
+      img {
+        bottom: 12vh;
+      }
+    }
+  }
+}
 
 // iPhone 5
 @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
