@@ -117,8 +117,7 @@
 
 @media (max-width: 720px) {
   .top {
-    // height: 80vh;
-    
+
     button {
       img {
         bottom: 17vh;
@@ -133,6 +132,8 @@
 // mobile
   @media screen and (max-device-width: 640px) {
     .top {
+      height: 80vh;
+
       h1 {
         font-size: 8vw;
       }
