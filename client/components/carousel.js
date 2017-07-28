@@ -22,13 +22,13 @@ const Carousel = (props) => {
             <img src="/images/deck1.jpg" alt="" className=""></img>
           </div>
           <div className="item">
-            <img src="/images/deck4.jpg" alt="" className=""></img>
+            <img src="/images/deck4.jpeg" alt="" className=""></img>
           </div>
           <div className="item">
-            <img src="/images/deck6.jpg" alt="" className=""></img>
+            <img src="/images/deck6.jpeg" alt="" className=""></img>
           </div>
           <div className="item">
-            <img src="/images/deck7.jpg" alt="" className=""></img>
+            <img src="/images/deck7.jpeg" alt="" className=""></img>
           </div>
           <div className="item">
             <img src="/images/deck2.jpg" alt="" className=""></img>
