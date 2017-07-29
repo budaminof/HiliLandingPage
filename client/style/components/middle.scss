@@ -30,8 +30,9 @@
         z-index: 50;
         height: 20vh;
         position: relative;
-        right: 7vw;
-        bottom: -8vh;
+        right: 55vw;
+        bottom: -5vh;
+        -webkit-filter: brightness(1) invert(0.9);
         filter: brightness(1) invert(0.9);
       }
     }

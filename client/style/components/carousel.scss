@@ -2,11 +2,14 @@
 
   .carousel-control.left, .carousel-control.right {
     background-image: none;
+    -webkit-transition: all ease 0.5s;
     transition: all ease 0.5s;
   }
 
   .carousel-control.left:hover, .carousel-control.right:hover {
       transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+
   }
 
   .carousel-control {
@@ -31,7 +34,9 @@
       display: block;
       position: absolute;
       z-index:0;
+      -webkit-transition: none;
       transition: none;
+      -webkit-transform: translate3d(0,0,0) !important;
       transform: translate3d(0,0,0) !important;
       &:first-of-type {
         position:relative;
@@ -44,6 +49,7 @@
 
     .next.left,
     .prev.right {
+      -webkit-transition: opacity 0.5s ease-in-out;
       transition: opacity 0.5s ease-in-out;
       opacity: 1;
       left: 0;
