@@ -43,14 +43,18 @@
 
       img {
         height: 40px;
+        -webkit-filter: invert(1);
+        -moz-filter: invert(1);
+        -o-filter: invert(1);
+        -ms-filter: invert(1);
         filter: invert(1);
-        color: $black;
         -webkit-transform: rotate(90deg);
         -moz-transform: rotate(90deg);
         -o-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
       }
+
       span {
         font-size: 20px;
         margin-left: 10px;
@@ -78,7 +82,7 @@
     justify-content: space-around;
     margin-bottom: 2vh;
     text-align: left;
-    
+
     p {
       font-size: 14px;
       letter-spacing: 0pt;
@@ -94,6 +98,7 @@
 
     img {
       height: 5vh;
+      margin-right: -10px;
     }
   }
 }
@@ -127,44 +132,44 @@
     }
   }
 
-  @media (max-width: 970px) {
-    .contact {
-      height: 100vh;
-      .contact-form {
-        .from-field {
-          input {
-            width: 70% !important;
-          }
+@media (max-width: 970px) {
+  .contact {
+    height: 100vh;
+    .contact-form {
+      .from-field {
+        input {
+          width: 70% !important;
         }
       }
     }
   }
+}
 
-  @media screen and (max-device-width: 640px) {
-    .contact {
-      height: 160vh !important;
-      .icon {
-        margin-top: 20vh;
-      }
+@media screen and (max-device-width: 640px) {
+  .contact {
+    height: 160vh !important;
+    .icon {
+      margin-top: 20vh;
     }
   }
+}
 
-  // iphone 6
-  @media (min-width: 375px) and (max-width: 667px) and (orientation: landscape) {
-    .contact {
-      height: 170vh;
-    }
+// iphone 6
+@media (min-width: 375px) and (max-width: 667px) and (orientation: landscape) {
+  .contact {
+    height: 170vh;
   }
+}
 
-  // iphone 5
-  @media (min-width: 320px) and (max-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-    .contact {
-      height: 180vh !important;
-    }
+// iphone 5
+@media (min-width: 320px) and (max-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .contact {
+    height: 180vh !important;
   }
+}
 
-  @media (min-width: 320px) and (max-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    .contact {
-      height: 200vh !important;
-    }
+@media (min-width: 320px) and (max-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .contact {
+    height: 200vh !important;
   }
+}

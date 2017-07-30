@@ -1,0 +1,101 @@
+.carousel {
+
+  .carousel-control.left, .carousel-control.right {
+    background-image: none;
+    -webkit-transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+
+  .carousel-control.left:hover, .carousel-control.right:hover {
+      -webkit-transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+
+  }
+
+  .carousel-control {
+    z-index: 100;
+  }
+
+  .carousel-indicators {
+    margin-bottom: 0px;
+    bottom: 5px;
+  }
+
+  .carousel-indicators li, .carousel-indicators li.active {
+      margin: 0px 7px !important;
+    }
+
+  .carousel-inner {
+    .item {
+      opacity: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: block;
+      position: absolute;
+      z-index:0;
+      -webkit-transition: none;
+      -webkit-transition: none;
+      -moz-transition: none;
+      -o-transition: none;
+      -ms-transition: none;
+      transition: none;
+      -webkit-transform: translate3d(0,0,0) !important;
+      -webkit-transform: translate3d(0,0,0) !important;
+      -moz-transform: translate3d(0,0,0) !important;
+      -o-transform: translate3d(0,0,0) !important;
+      -ms-transform: translate3d(0,0,0) !important;
+      transform: translate3d(0,0,0) !important;
+      &:first-of-type {
+        position:relative;
+      }
+    }
+    .active {
+      opacity: 1;
+      z-index:3;
+    }
+
+    .next.left,
+    .prev.right {
+      -webkit-transition: opacity 0.5s ease-in-out;
+      -webkit-transition: opacity 0.5s ease-in-out;
+      -moz-transition: opacity 0.5s ease-in-out;
+      -o-transition: opacity 0.5s ease-in-out;
+      -ms-transition: opacity 0.5s ease-in-out;
+      transition: opacity 0.5s ease-in-out;
+      opacity: 1;
+      left: 0;
+      z-index:2;
+    }
+    .active.left,
+    .active.right {
+      z-index:1;
+    }
+  }
+
+  }
+
+  @media screen and (max-device-width: 640px) {
+    .carousel-indicators {
+      margin-left: -25%;
+    }
+
+    .carousel-inner {
+      .item {
+        img {
+          max-width: 200%;
+          position: relative;
+          left: 50%;
+        }
+      }
+    }
+
+  }

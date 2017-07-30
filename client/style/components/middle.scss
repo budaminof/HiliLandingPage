@@ -1,42 +1,51 @@
 @import './components/variables';
 
 .middle {
-  @include coverImage;
-  background: url('/images/glove.png') no-repeat center center;
-  margin-top: 3px;
+  height: 80vh;
 
   aside {
-    color: $white;
-    position: relative;
-    top: 25vh;
-    left: 10vw;
+    color: $black;
+    top: 10vh;
 
     .page-header {
-      margin-top: 0px;
       padding-bottom: 25px;
     }
 
     p:nth-of-type(2n) {
-      padding-bottom: 30px;
       padding-top: 10px;
     }
+  }
+  .stamp {
+    display: none;
   }
 }
 
 @media (max-width: 600px) {
     .middle {
       aside {
-        top: 20vh;
         text-align: right;
+      }
+      .stamp {
+        display: block;
+        z-index: 50;
+        height: 20vh;
+        position: relative;
+        right: 55vw;
+        bottom: -5vh;
+        -webkit-filter: brightness(1) invert(0.9);
+        -moz-filter: brightness(1) invert(0.9);
+        -o-filter: brightness(1) invert(0.9);
+        -ms-filter: brightness(1) invert(0.9);
+        filter: brightness(1) invert(0.9);
       }
     }
   }
 
 @media screen and (max-device-width: 640px) {
   .middle {
-    height: 100vh;
+    height: 105vh;
     aside {
-      top: 10vh;
+      top: 5vh;
     }
   }
 }
@@ -44,19 +53,19 @@
 // iphone 6
 @media (min-width: 375px) and (max-width: 667px) and (orientation: portrait) {
   .middle {
-    height: 100vh;
+    height: 105vh;
   }
 }
 
 @media (min-width: 375px) and (max-width: 667px) and (orientation: landscape) {
   .middle {
-    height: 145vh;
+    height: 130vh;
   }
 }
 
 // iphone 5
 @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
   .middle {
-    height: 125vh;
+    height: 130vh;
   }
 }
