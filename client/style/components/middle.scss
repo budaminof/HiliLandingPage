@@ -33,6 +33,9 @@
         right: 55vw;
         bottom: -5vh;
         -webkit-filter: brightness(1) invert(0.9);
+        -moz-filter: brightness(1) invert(0.9);
+        -o-filter: brightness(1) invert(0.9);
+        -ms-filter: brightness(1) invert(0.9);
         filter: brightness(1) invert(0.9);
       }
     }
@@ -40,7 +43,7 @@
 
 @media screen and (max-device-width: 640px) {
   .middle {
-    height: 100vh;
+    height: 105vh;
     aside {
       top: 5vh;
     }
@@ -50,7 +53,7 @@
 // iphone 6
 @media (min-width: 375px) and (max-width: 667px) and (orientation: portrait) {
   .middle {
-    height: 100vh;
+    height: 105vh;
   }
 }
 
@@ -63,6 +66,6 @@
 // iphone 5
 @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
   .middle {
-    height: 125vh;
+    height: 130vh;
   }
 }

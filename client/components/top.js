@@ -29,12 +29,12 @@ class Head extends Component {
             <p>
               דנטרו היא חברה ייעודית המתמחה בחידוש דקים ורסטורציה ברף האיכות הגבוה ביותר בתחום מבחינת ידע, מקצועיות, חדשנות, טכנולוגיה וחומרים באיכות הגבוהה ביותר.
             </p>
+          <button>
+            <a className="page-scroll" onClick={event => this.handleScroll(event) }>
+              <img src="/images/arrow.png" className="arrow"/>
+            </a>
+          </button>
         </aside>
-        <button>
-          <a className="page-scroll" onClick={event => this.handleScroll(event) }>
-            <img src="/images/arrow.png" className="arrow"/>
-          </a>
-        </button>
 
       </article>
     );

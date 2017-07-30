@@ -51,8 +51,6 @@
     left: 0;
     right:0;
     margin: auto;
-    -webkit-filter: brightness(1) invert(0.1);
-    filter: brightness(1) invert(0.1);
   }
 
   .stamp {
@@ -61,14 +59,18 @@
     position: fixed;
     right: 7vw;
     bottom: 41vh;
-    filter: brightness(1) invert(0.9);
     -webkit-filter: brightness(1) invert(0.9);
+    -moz-filter: brightness(1) invert(0.9);
+    -o-filter: brightness(1) invert(0.9);
+    -ms-filter: brightness(1) invert(0.9);
+    filter: brightness(1) invert(0.9);
   }
 
   aside {
     color: $black;
     top: 40vh;
     text-align: center;
+    // border: 1px solid red;
     h1 {
       padding-top: 20px;
       padding-bottom: 20px;
@@ -80,21 +82,27 @@
 
   button {
     @include button;
+    padding-top: 40px;
+    padding-bottom: 5px;
+    display: block;
+    width: 100%;
 
     img {
+      left: 50%;
       transition: all ease 0.5s;
       height: 7vh;
-      position: absolute;
-      bottom: 20vh;
-      left: 0;
-      right:0;
-      margin: auto;
       -webkit-filter: brightness(1) invert(1);
+      -moz-filter: brightness(1) invert(1);
+      -o-filter: brightness(1) invert(1);
+      -ms-filter: brightness(1) invert(1);
       filter: brightness(1) invert(1);
     }
 
     img:hover {
       -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      -ms-transform: scale(1.1);
       transform: scale(1.1);
     }
   }
@@ -122,12 +130,6 @@
 
 @media (max-width: 720px) {
   .top {
-
-    button {
-      img {
-        bottom: 17vh;
-      }
-    }
     .stamp {
       position: absolute;
     }
@@ -138,7 +140,6 @@
   @media screen and (max-device-width: 640px) {
     .top {
       height: 80vh;
-
       h1 {
         font-size: 8vw;
       }
@@ -150,6 +151,9 @@
       }
       aside {
         top: 30vh;
+        button {
+          padding-top: 5px;
+        }
       }
     }
   }
@@ -163,11 +167,6 @@
       top: 30vh;
       h1 {
         font-size: 7vh;
-      }
-    }
-    button {
-      img {
-        bottom: 12vh;
       }
     }
   }

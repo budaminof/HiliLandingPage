@@ -44,8 +44,10 @@
       img {
         height: 40px;
         -webkit-filter: invert(1);
+        -moz-filter: invert(1);
+        -o-filter: invert(1);
+        -ms-filter: invert(1);
         filter: invert(1);
-        color: $black;
         -webkit-transform: rotate(90deg);
         -moz-transform: rotate(90deg);
         -o-transform: rotate(90deg);
