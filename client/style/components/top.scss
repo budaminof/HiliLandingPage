@@ -70,7 +70,7 @@
     color: $black;
     top: 40vh;
     text-align: center;
-    // border: 1px solid red;
+    
     h1 {
       padding-top: 20px;
       padding-bottom: 20px;
@@ -117,6 +117,14 @@
   }
 }
 
+@media (max-width: 720px) {
+  .top {
+    .stamp {
+      position: absolute;
+    }
+  }
+}
+
 @media (max-width: 600px) {
     .top {
       aside {
@@ -126,14 +134,6 @@
     .stamp {
       display: none;
     }
-  }
-
-@media (max-width: 720px) {
-  .top {
-    .stamp {
-      position: absolute;
-    }
-  }
   }
 
 // mobile

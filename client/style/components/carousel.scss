@@ -11,13 +11,12 @@
   }
 
   .carousel-control.left:hover, .carousel-control.right:hover {
-      -webkit-transform: scale(1.2);
-      -webkit-transform: scale(1.2);
-      -moz-transform: scale(1.2);
-      -o-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-      transform: scale(1.2);
-
+    -webkit-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
   }
 
   .carousel-control {
@@ -55,7 +54,7 @@
       -ms-transform: translate3d(0,0,0) !important;
       transform: translate3d(0,0,0) !important;
       &:first-of-type {
-        position:relative;
+        position: relative;
       }
     }
     .active {
@@ -81,6 +80,13 @@
     }
   }
 
+  .carousel-inner {
+    .item {
+      img {
+        margin: auto;
+      }
+    }
+  }
   }
 
   @media screen and (max-device-width: 640px) {
