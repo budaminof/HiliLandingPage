@@ -37,11 +37,9 @@
       color: $black;
       font-size: 20px;
     }
-
     a:hover, a:active, a:focus {
       text-decoration: none;
     }
-
     img {
       height: 17px;
       -webkit-filter: brightness(1) invert(0.1);
@@ -154,7 +152,15 @@
       .logo-top {
         top: 4vh;
       }
-      
+      .social {
+        a {
+          font-size: 18px;
+        }
+        img {
+          height: 15px;
+        }
+      }
+
       aside {
         top: 30vh;
         button {
