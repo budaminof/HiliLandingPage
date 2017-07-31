@@ -28,19 +28,23 @@
   height: 85vh;
 
   .social {
+    position: absolute;
     float: right;
-    display: none;
-    margin-right: 6vw;
-    margin-top: 4vw;
-    justify-content: space-around;
-    width: 150px;
+    margin-right: 3vw;
+    margin-top: 3vw;
     a {
       cursor: pointer;
     }
     img {
       height: 25px;
       -webkit-filter: brightness(1) invert(0.1);
+      -moz-filter: brightness(1) invert(0.1);
+      -o-filter: brightness(1) invert(0.1);
+      -ms-filter: brightness(1) invert(0.1);
       filter: brightness(1) invert(0.1);
+    }
+    div {
+      display: none;
     }
   }
 
@@ -70,7 +74,7 @@
     color: $black;
     top: 40vh;
     text-align: center;
-    
+
     h1 {
       padding-top: 20px;
       padding-bottom: 20px;
@@ -162,7 +166,6 @@
 @media screen and (max-device-width: 680px) and (orientation: landscape) {
   .top {
     height: 95vh;
-
     aside {
       top: 30vh;
       h1 {
