@@ -17,11 +17,10 @@ class Head extends Component {
 
         <div className="social">
           <div>Icons made by <a href="https://www.flaticon.com/authors/zurb" title="Zurb">Zurb</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-          <a href="tel:+97253395986"><img src="/images/phone.png"/></a>
+          <a href="tel:+97253395986"><img src="/images/phone2.png"/><span> צור קשר</span></a>
         </div>
 
         <img src="/images/logo-top.png" className="logo-top"/>
-        <img src="/images/stamp.png" className="stamp"/>
 
         <aside className="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
             <h1>אומנות החידוש והשימור</h1>

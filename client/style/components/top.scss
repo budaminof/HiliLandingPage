@@ -34,9 +34,16 @@
     margin-top: 3vw;
     a {
       cursor: pointer;
+      color: $black;
+      font-size: 20px;
     }
+
+    a:hover, a:active, a:focus {
+      text-decoration: none;
+    }
+
     img {
-      height: 25px;
+      height: 17px;
       -webkit-filter: brightness(1) invert(0.1);
       -moz-filter: brightness(1) invert(0.1);
       -o-filter: brightness(1) invert(0.1);
@@ -57,18 +64,18 @@
     margin: auto;
   }
 
-  .stamp {
-    z-index: 50;
-    height: 20vh;
-    position: fixed;
-    right: 7vw;
-    bottom: 41vh;
-    -webkit-filter: brightness(1) invert(0.9);
-    -moz-filter: brightness(1) invert(0.9);
-    -o-filter: brightness(1) invert(0.9);
-    -ms-filter: brightness(1) invert(0.9);
-    filter: brightness(1) invert(0.9);
-  }
+  // .stamp {
+  //   z-index: 50;
+  //   height: 20vh;
+  //   position: fixed;
+  //   right: 7vw;
+  //   bottom: 41vh;
+  //   -webkit-filter: brightness(1) invert(0.9);
+  //   -moz-filter: brightness(1) invert(0.9);
+  //   -o-filter: brightness(1) invert(0.9);
+  //   -ms-filter: brightness(1) invert(0.9);
+  //   filter: brightness(1) invert(0.9);
+  // }
 
   aside {
     color: $black;
@@ -113,30 +120,27 @@
 
 }
 
-@media (max-width: 800px) {
-  .top {
-    .stamp {
-      bottom: 55vh;
-    }
-  }
-}
+// @media (max-width: 800px) {
+//   .top {
+//     .stamp {
+//       bottom: 55vh;
+//     }
+//   }
+// }
 
-@media (max-width: 720px) {
-  .top {
-    .stamp {
-      position: absolute;
-    }
-  }
-}
+// @media (max-width: 720px) {
+//   .top {
+//     .stamp {
+//       position: absolute;
+//     }
+//   }
+// }
 
 @media (max-width: 600px) {
     .top {
       aside {
         bottom: 12vh;
       }
-    }
-    .stamp {
-      display: none;
     }
   }
 
@@ -150,8 +154,14 @@
       .logo-top {
         top: 4vh;
       }
-      .stamp {
-        display: none;
+
+      .social {
+        a {
+          font-size: 15px;
+        }
+        img {
+          height: 13px;
+        }
       }
       aside {
         top: 30vh;
