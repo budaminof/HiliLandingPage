@@ -78,8 +78,11 @@
 
   .details {
     display: flex;
+    display: -webkit-flex;
     flex-direction: row;
+    -webkit-flex-direction: row;
     justify-content: space-around;
+    -webkit-justify-content: space-around;
     margin-bottom: 2vh;
     text-align: left;
 
@@ -113,8 +116,11 @@
     }
     .details {
       display: flex;
+      display: -webkit-flex;
       flex-direction: column;
+      -webkit-flex-direction: column;
       justify-content: space-around;
+      -webkit-justify-content: space-around;
       text-align: center;
       div {
         margin-bottom: 3vh;
