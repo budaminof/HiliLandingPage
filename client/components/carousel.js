@@ -19,19 +19,19 @@ const Carousel = (props) => {
 
         <div className="carousel-inner" role="listbox">
           <div className="item active">
-            <img src="/images/deck1.jpg" alt="" className=""></img>
+            <img src="/images/test1.jpg" alt="" className=""></img>
           </div>
           <div className="item">
-            <img src="/images/deck4.jpeg" alt="" className=""></img>
+            <img src="/images/test4.jpg" alt="" className=""></img>
           </div>
           <div className="item">
-            <img src="/images/deck6.jpeg" alt="" className=""></img>
+            <img src="/images/test2.jpg" alt="" className=""></img>
           </div>
           <div className="item">
-            <img src="/images/deck7.jpeg" alt="" className=""></img>
+            <img src="/images/test3.jpg" alt="" className=""></img>
           </div>
           <div className="item">
-            <img src="/images/deck2.jpg" alt="" className=""></img>
+            <img src="/images/test5.jpg" alt="" className=""></img>
           </div>
         </div>
 
