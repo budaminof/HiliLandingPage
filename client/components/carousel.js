@@ -22,7 +22,7 @@ const Carousel = (props) => {
             <img src="/images/1.jpg" alt="" className=""></img>
           </div>
           <div className="item">
-            <img src="/images/4.jpg" alt="" className=""></img>
+            <img src="/images/5.jpg" alt="" className=""></img>
           </div>
           <div className="item">
             <img src="/images/2.jpg" alt="" className=""></img>
@@ -31,7 +31,7 @@ const Carousel = (props) => {
             <img src="/images/3.jpg" alt="" className=""></img>
           </div>
           <div className="item">
-            <img src="/images/5.jpg" alt="" className=""></img>
+            <img src="/images/4.jpg" alt="" className=""></img>
           </div>
         </div>
 
