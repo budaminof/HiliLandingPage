@@ -62,19 +62,6 @@
     margin: auto;
   }
 
-  // .stamp {
-  //   z-index: 50;
-  //   height: 20vh;
-  //   position: fixed;
-  //   right: 7vw;
-  //   bottom: 41vh;
-  //   -webkit-filter: brightness(1) invert(0.9);
-  //   -moz-filter: brightness(1) invert(0.9);
-  //   -o-filter: brightness(1) invert(0.9);
-  //   -ms-filter: brightness(1) invert(0.9);
-  //   filter: brightness(1) invert(0.9);
-  // }
-
   aside {
     color: $black;
     top: 40vh;
@@ -92,6 +79,7 @@
   button {
     @include button;
     padding-top: 40px;
+    // padding-top: 7vh;;
     padding-bottom: 5px;
     display: block;
     width: 100%;
@@ -118,21 +106,13 @@
 
 }
 
-// @media (max-width: 800px) {
-//   .top {
-//     .stamp {
-//       bottom: 55vh;
-//     }
-//   }
-// }
-
-// @media (max-width: 720px) {
-//   .top {
-//     .stamp {
-//       position: absolute;
-//     }
-//   }
-// }
+@media #{$mq-large} {
+  .top {
+    button {
+      padding-top: 15vh;
+    }
+  }
+}
 
 @media (max-width: 600px) {
     .top {

@@ -87,7 +87,7 @@
     text-align: left;
 
     p {
-      font-size: 14px;
+      font-size: $small-font-size;
       letter-spacing: 0pt;
       padding: 0px 0px;
       margin: 0px 0px;
@@ -103,6 +103,7 @@
       height: 5vh;
       margin-right: -10px;
     }
+
   }
 }
 
