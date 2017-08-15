@@ -14,10 +14,9 @@ class Head extends Component {
   render() {
     return (
       <article className="top" id="top">
-
         <div className="social">
           <div>Icons made by <a href="https://www.flaticon.com/authors/zurb" title="Zurb">Zurb</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-          <a href="tel:+97253395986"><img src="/images/phone2.png"/><span> צור קשר</span></a>
+          <a href="tel:+972777296172"><img src="/images/phone2.png"/><span> 077-7296172</span></a>
         </div>
 
         <img src="/images/logo-top.png" className="logo-top"/>

@@ -153,6 +153,9 @@
         top: 4vh;
       }
       .social {
+        span {
+          display: none;
+        }
         a {
           font-size: 18px;
         }

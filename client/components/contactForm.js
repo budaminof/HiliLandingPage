@@ -39,7 +39,7 @@ const ContactForm = (props) => {
 
           <button type="submit"
             disabled={ props.pristine || props.submitting} >
-            <span>שלח</span>
+            <span>דברו איתנו </span>
             <img src="/images/arrow.png"></img>
           </button>
         </form>
