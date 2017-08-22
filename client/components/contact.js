@@ -58,7 +58,7 @@ class Contact extends Component {
         <h1>נשמח לענות לכל שאלה ועניין</h1>
 
         <SearchForm onSubmit={ this.handleSubmit.bind(this) }/>
-
+  
         <div className="icon">
           <a onClick={event => this.handleScroll(event) }><img src="/images/icon.png" /></a>
         </div>

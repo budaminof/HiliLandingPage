@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Field, reduxForm, handleSubmit, reset } from 'redux-form';
 import * as actions from '../actions';
 
@@ -32,7 +33,7 @@ class ContactForm extends Component {
   const { handleSubmit, pristine, reset } = this.props;
 
     return (
-      <div className="contact-form">
+      <div className="contact-form row">
       <form onSubmit={ handleSubmit } >
 
           <Field name="name" component={ renderField } type="text" label="שם."
@@ -43,12 +44,16 @@ class ContactForm extends Component {
 
           <Field name="email" component={ renderField } type="email" label="EMAIL."
             required/>
-
-          <button type="submit"
+          {
+            !this.props.msg ?
+            <button type="submit"
             disabled={ this.props.pristine || this.props.submitting } >
             <span>דברו איתנו </span>
             <img src="/images/arrow.png"></img>
-          </button>
+            </button>
+            :
+            <p className="msg"> {this.props.msg} </p>
+          }
         </form>
       </div>
     );
@@ -56,8 +61,17 @@ class ContactForm extends Component {
 
 }
 
-export default reduxForm({
+ContactForm = reduxForm({
   form: 'contactForm',
   validate,
   onSubmitSuccess: afterSubmit,
 })(ContactForm);
+
+  function mapStateToProps (state) {
+    return {
+      msg: state.contact.msg
+    }
+  }
+ContactForm = connect(mapStateToProps, null)(ContactForm);
+
+export default ContactForm;
