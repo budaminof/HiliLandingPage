@@ -79,6 +79,7 @@
   button {
     @include button;
     padding-top: 4vh;
+    padding-bottom: 5px;
     width: 100%;
 
     img {
