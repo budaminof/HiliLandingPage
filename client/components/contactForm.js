@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Field, reduxForm, handleSubmit, reset } from 'redux-form';
+import * as actions from '../actions';
 
 const validate = values => {
   const errors = {}
@@ -21,12 +23,18 @@ const afterSubmit = (result, dispatch) => {
   dispatch(reset('contactForm'));
 }
 
-const ContactForm = (props) => {
-  const { handleSubmit, pristine, reset, submitting } = props;
+class ContactForm extends Component {
+  constructor(props) {
+        super(props);
+    }
+
+  render () {
+
+  const { handleSubmit, pristine, reset } = this.props;
 
     return (
       <div className="contact-form">
-        <form onSubmit={ handleSubmit } >
+      <form onSubmit={ handleSubmit } >
 
           <Field name="name" component={ renderField } type="text" label="שם."
             required/>
@@ -38,13 +46,15 @@ const ContactForm = (props) => {
             required/>
 
           <button type="submit"
-            disabled={ props.pristine || props.submitting} >
+            disabled={ this.props.pristine || this.props.submitting} >
             <span>דברו איתנו </span>
             <img src="/images/arrow.png"></img>
           </button>
         </form>
       </div>
     );
+  }
+
 }
 
 export default reduxForm({

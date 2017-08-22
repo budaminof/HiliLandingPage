@@ -8,6 +8,9 @@ import * as actions from '../actions';
 class Contact extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      showConversion: false
+    };
   }
 
   handleScroll(event) {
@@ -15,10 +18,37 @@ class Contact extends Component {
     scrollToComponent(anchor);
   }
 
-  handleSubmit(data) {
-    actions.submitForm(data);
-    console.log("form has been submitted.");
-  }
+  handleSubmit (data) {
+    console.log("contact form submitted", data);
+    event.preventDefault();
+    this.props.submitForm(data);
+    //
+    // var google_conversion_id = 852164689;
+    // var google_conversion_language = "en";
+    // var google_conversion_format = "3";
+    // var google_conversion_color = "ffffff";
+    // var google_conversion_label = "J9k5CITuhnQQ0YCslgM";
+    // var google_remarketing_only = false;
+
+      this.setState({
+        showConversion: true
+      });
+    }
+
+  renderGoogleStuff() {
+    let divStyle = {
+      display: 'inline',
+      height: 1,
+      width: 1,
+      border: 'none'
+    }
+     return (
+        <div>
+         <img style={{ divStyle }}  alt=""  src="//www.googleadservices.com/pagead/conversion/852164689/?label=J9k5CITuhnQQ0YCslgM&amp;guid=ON&amp;script=0"></img>
+       </div>
+     );
+   }
+
 
   render() {
     console.log("container", this.props);
@@ -26,7 +56,7 @@ class Contact extends Component {
       <div className="contact">
         <h1>נשמח לענות לכל שאלה ועניין</h1>
 
-        <SearchForm />
+        <SearchForm onSubmit={ this.handleSubmit.bind(this) }/>
 
         <div className="icon">
           <a onClick={event => this.handleScroll(event) }><img src="/images/icon.png" /></a>
@@ -51,6 +81,8 @@ class Contact extends Component {
             <a onClick={event => this.handleScroll(event) }><img src="/images/dentro-details.png"/></a>
           </div>
 
+            { this.state.showConversion ? this.renderGoogleStuff() : <div></div> }
+
         </div>
       </div>
     );
@@ -59,8 +91,7 @@ class Contact extends Component {
 
 function mapStateToProps (state) {
   return {
-    msg: state.contact.msg,
-    conversion: state.contact.conversion
+    msg: state.contact.msg
   }
 }
 

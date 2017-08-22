@@ -1,12 +1,9 @@
-import { SUBMIT_FORM, SUCCESS } from '../actions/types';
+import { SUBMIT_FORM } from '../actions/types';
 
-export default function (state = { msg: null, conversion: false }, action) {
-
+export default function (state = { msg: null }, action) {
   switch(action.type) {
     case SUBMIT_FORM:
-      return { ...state, msg: action.payload.msg };
-    case SUCCESS:
-      return { ...state, conversion: true };
+      return { ...state, msg: action.payload.data.msg[0] };
 
     default:
       return state;
