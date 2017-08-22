@@ -11,11 +11,10 @@ router.post('/', function(req, res, next) {
     domain: process.env.DOMAIN
   });
 
-  // to: `<hili@dentro.co.il>, <nadav@dentro.co.il>`,
 
   let data = {
     from: `${req.body.name} <${req.body.email}>`,
-    to: `<budaminof@gmail.com>`,
+    to: `<hili@dentro.co.il>, <nadav@dentro.co.il>`,
     subject: 'דנטרו',
     text: `
       היי הילי ונדב,
