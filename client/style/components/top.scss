@@ -108,6 +108,10 @@
 
 @media #{$mq-large} {
   .top {
+    .social {
+      margin-right: 10vh;
+      margin-top: 6vh;
+    }
     button {
       padding-top: 15vh;
     }

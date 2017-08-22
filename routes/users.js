@@ -3,6 +3,7 @@ var router = express.Router();
 require('dotenv').load();
 
 router.post('/', function(req, res, next) {
+
   const API_KEY = process.env.API_KEY;
 
   let mailgun = require('mailgun-js')({
@@ -10,9 +11,11 @@ router.post('/', function(req, res, next) {
     domain: process.env.DOMAIN
   });
 
+  // to: `<hili@dentro.co.il>, <nadav@dentro.co.il>`,
+
   let data = {
     from: `${req.body.name} <${req.body.email}>`,
-    to: `<hili@dentro.co.il>, <nadav@dentro.co.il>`,
+    to: `<budaminof@gmail.com>`,
     subject: 'דנטרו',
     text: `
       היי הילי ונדב,
@@ -30,11 +33,11 @@ router.post('/', function(req, res, next) {
   mailgun.messages().send(data, function (error, body) {
     console.log('BODY',body);
     if (error) {
-      res.status(422).json({
+      res.json({
         errors: ["נתקלנו בבעיה. בבקשה תנסו שוב מאוחר יותר."]
       })
     }
-    res.status(200).json({
+    res.json({
       msg: ["תודה רבה! ניצור קשר בקרוב"]
     })
 

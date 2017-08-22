@@ -4,18 +4,30 @@ import SearchForm from './contactForm';
 import scrollToComponent from 'react-scroll-to-component';
 import * as actions from '../actions';
 
+
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+  }
 
   handleScroll(event) {
     let anchor = document.getElementById('top');
     scrollToComponent(anchor);
   }
 
+  handleSubmit(data) {
+    actions.submitForm(data);
+    console.log("form has been submitted.");
+  }
+
   render() {
+    console.log("container", this.props);
     return (
       <div className="contact">
         <h1>נשמח לענות לכל שאלה ועניין</h1>
-        <SearchForm onSubmit={ actions.submitForm }/>
+
+        <SearchForm />
+
         <div className="icon">
           <a onClick={event => this.handleScroll(event) }><img src="/images/icon.png" /></a>
         </div>
@@ -26,7 +38,7 @@ class Contact extends Component {
           </div>
 
           <div>
-            <p>הילי &middot; טל. <a href="tel:+972777296172">052.3395986</a></p>
+            <p>הילי &middot; טל. <a href="tel:+972777296172">077.7296172</a></p>
             <p><a href="mailto:hili@dentro.co.il">Hili@dentro.co.il</a></p>
           </div>
 
@@ -45,4 +57,11 @@ class Contact extends Component {
   }
 }
 
-export default connect(null, actions)(Contact);
+function mapStateToProps (state) {
+  return {
+    msg: state.contact.msg,
+    conversion: state.contact.conversion
+  }
+}
+
+export default connect(mapStateToProps, actions)(Contact);
