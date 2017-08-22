@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import { Field, reduxForm, handleSubmit, reset } from 'redux-form';
 import * as actions from '../actions';
 
@@ -46,7 +45,7 @@ class ContactForm extends Component {
             required/>
 
           <button type="submit"
-            disabled={ this.props.pristine || this.props.submitting} >
+            disabled={ this.props.pristine || this.props.submitting } >
             <span>דברו איתנו </span>
             <img src="/images/arrow.png"></img>
           </button>

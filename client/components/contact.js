@@ -82,9 +82,8 @@ class Contact extends Component {
             <a onClick={event => this.handleScroll(event) }><img src="/images/dentro-details.png"/></a>
           </div>
 
-            { this.state.showConversion ? this.renderGoogleStuff() : <div></div> }
-
         </div>
+        { this.state.showConversion ? this.renderGoogleStuff() : <div></div> }
       </div>
     );
   }
