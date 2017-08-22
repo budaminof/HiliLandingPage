@@ -19,23 +19,24 @@ class Contact extends Component {
   }
 
   handleSubmit (data) {
-    console.log("contact form submitted", data);
     event.preventDefault();
     this.props.submitForm(data);
-    //
-    // var google_conversion_id = 852164689;
-    // var google_conversion_language = "en";
-    // var google_conversion_format = "3";
-    // var google_conversion_color = "ffffff";
-    // var google_conversion_label = "J9k5CITuhnQQ0YCslgM";
-    // var google_remarketing_only = false;
 
-      this.setState({
-        showConversion: true
-      });
+    var google_conversion_id = 852164689;
+    var google_conversion_language = "en";
+    var google_conversion_format = "3";
+    var google_conversion_color = "ffffff";
+    var google_conversion_label = "J9k5CITuhnQQ0YCslgM";
+    var google_remarketing_only = false;
+
+    this.setState({
+      showConversion: true
+    });
+
     }
 
   renderGoogleStuff() {
+    // render google conversion image
     let divStyle = {
       display: 'inline',
       height: 1,
@@ -51,7 +52,7 @@ class Contact extends Component {
 
 
   render() {
-    console.log("container", this.props);
+
     return (
       <div className="contact">
         <h1>נשמח לענות לכל שאלה ועניין</h1>
