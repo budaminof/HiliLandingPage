@@ -30,6 +30,19 @@
   }
 }
 
+
+@media screen and (max-device-width: 640px) {
+  .middle {
+    height: 105vh;
+    aside {
+      top: 5vh;
+    }
+    .stamp {
+      bottom: 0vh;
+    }
+  }
+}
+
 @media #{$mq-large} {
   .middle {
     .stamp {
@@ -45,18 +58,6 @@
       }
     }
   }
-
-@media screen and (max-device-width: 640px) {
-  .middle {
-    height: 105vh;
-    aside {
-      top: 5vh;
-    }
-    .stamp {
-      bottom: 0vh;
-    }
-  }
-}
 
 // iphone 6
 @media (min-width: 375px) and (max-width: 667px) and (orientation: portrait) {
